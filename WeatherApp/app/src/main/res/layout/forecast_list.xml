@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:id="@+id/dailytime"
+        android:layout_width="392dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/textview"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempmaxmin"
+        android:layout_width="203dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textview"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailytime"
+        tools:text="72 C" />
+
+    <TextView
+        android:id="@+id/dailydes"
+        android:layout_width="202dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempmaxmin"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/dailyprecip"
+        android:layout_width="202dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailydes"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/dailyindex"
+        android:layout_width="202dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyprecip"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/dailyimage"
+        android:layout_width="141dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/tempmaxmin"
+        app:layout_constraintTop_toBottomOf="@+id/dailytime"
+        app:srcCompat="@drawable/_01d"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/dailymortemp"
+        android:layout_width="63dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/dailydaytemp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyindex" />
+
+    <TextView
+        android:id="@+id/dailydaytemp"
+        android:layout_width="63dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/dailyevetemp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dailymortemp"
+        app:layout_constraintTop_toBottomOf="@+id/dailyindex" />
+
+    <TextView
+        android:id="@+id/dailyevetemp"
+        android:layout_width="63dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/dailynighttemp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dailydaytemp"
+        app:layout_constraintTop_toBottomOf="@+id/dailyimage" />
+
+    <TextView
+        android:id="@+id/dailynighttemp"
+        android:layout_width="63dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/dailyevetemp"
+        app:layout_constraintTop_toBottomOf="@+id/dailyimage" />
+
+    <TextView
+        android:id="@+id/morningtime"
+        android:layout_width="59dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/_8_am"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/daytime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailymortemp" />
+
+    <TextView
+        android:id="@+id/daytime"
+        android:layout_width="59dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/_1_pm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/eveningtime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/morningtime"
+        app:layout_constraintTop_toBottomOf="@+id/dailydaytemp" />
+
+    <TextView
+        android:id="@+id/eveningtime"
+        android:layout_width="59dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/_5_pm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/nighttime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/daytime"
+        app:layout_constraintTop_toBottomOf="@+id/dailyevetemp" />
+
+    <TextView
+        android:id="@+id/nighttime"
+        android:layout_width="59dp"
+        android:layout_height="28dp"
+        android:text="@string/_11_pm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eveningtime"
+        app:layout_constraintTop_toBottomOf="@+id/dailynighttemp"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

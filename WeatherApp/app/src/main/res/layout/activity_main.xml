@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hourlyrecycler"
+        android:layout_width="403dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moringtemptime"
+        app:reverseLayout="false" />
+
+    <TextView
+        android:id="@+id/homeindex"
+        android:layout_width="178dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homehumidity"
+        tools:ignore="TextContrastCheck"
+        tools:text="UV Index: 2" />
+
+    <TextView
+        android:id="@+id/homesunrise"
+        android:layout_width="173dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Sunrise: 6:00 AM" />
+
+    <TextView
+        android:id="@+id/homesunset"
+        android:layout_width="173dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TextContrastCheck"
+        tools:text="Sunset: 6:00 PM" />
+
+    <TextView
+        android:id="@+id/homevisibility"
+        android:layout_width="183dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homewind"
+        tools:ignore="TextContrastCheck"
+        tools:text="Visibilty: 6.2 mi" />
+
+    <TextView
+        android:id="@+id/homehumidity"
+        android:layout_width="178dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homewind"
+        tools:ignore="TextContrastCheck"
+        tools:text="Humidity: 51%" />
+
+    <TextView
+        android:id="@+id/homewind"
+        android:layout_width="295dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeinfo"
+        tools:ignore="TextContrastCheck"
+        tools:text="Winds: E at 5 mph" />
+
+    <TextView
+        android:id="@+id/homeinfo"
+        android:layout_width="297dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="56dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homefeel"
+        tools:ignore="TextContrastCheck"
+        tools:text="Broken Cloulds (75% Clouds)" />
+
+    <TextView
+        android:id="@+id/homefeel"
+        android:layout_width="198dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hometemp"
+        tools:ignore="TextContrastCheck"
+        tools:text="Feels Like 71 C" />
+
+    <TextView
+        android:id="@+id/hometemp"
+        android:layout_width="199dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="39dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toStartOf="@+id/homeimageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homelocation"
+        tools:ignore="TextContrastCheck"
+        tools:text="72 C" />
+
+    <TextView
+        android:id="@+id/homelocation"
+        android:layout_width="386dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextContrastCheck"
+        tools:text="Chicago, Illinois  " />
+
+    <TextView
+        android:id="@+id/homedate"
+        android:layout_width="386dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homelocation"
+        tools:ignore="TextContrastCheck,TextContrastCheck"
+        tools:text="Thu Sep 30 9:20 PM" />
+
+    <ImageView
+        android:id="@+id/homeimageView"
+        android:layout_width="125dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toEndOf="@+id/hometemp"
+        app:layout_constraintTop_toBottomOf="@+id/homelocation"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/weathericon" />
+
+    <TextView
+        android:id="@+id/morningtemp"
+        android:layout_width="69dp"
+        android:layout_height="35sp"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/daytimetemp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeindex" />
+
+    <TextView
+        android:id="@+id/daytimetemp"
+        android:layout_width="68dp"
+        android:layout_height="35sp"
+        android:layout_marginTop="6dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/eveningtemp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/morningtemp"
+        app:layout_constraintTop_toBottomOf="@+id/homeindex" />
+
+    <TextView
+        android:id="@+id/eveningtemp"
+        android:layout_width="68dp"
+        android:layout_height="35sp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/nighttemp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/daytimetemp"
+        app:layout_constraintTop_toBottomOf="@+id/homevisibility" />
+
+    <TextView
+        android:id="@+id/nighttemp"
+        android:layout_width="68dp"
+        android:layout_height="35sp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eveningtemp"
+        app:layout_constraintTop_toBottomOf="@+id/homevisibility" />
+
+    <TextView
+        android:id="@+id/moringtemptime"
+        android:layout_width="68dp"
+        android:layout_height="27dp"
+        android:text="@string/_8_am"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/daytimetemptime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morningtemp"
+        app:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/daytimetemptime"
+        android:layout_width="68dp"
+        android:layout_height="27dp"
+        android:text="@string/_1_pm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/eveningtemptime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/moringtemptime"
+        app:layout_constraintTop_toBottomOf="@+id/daytimetemp"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/eveningtemptime"
+        android:layout_width="68dp"
+        android:layout_height="27dp"
+        android:text="@string/_5_pm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toStartOf="@+id/nighttemptime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/daytimetemptime"
+        app:layout_constraintTop_toBottomOf="@+id/eveningtemp"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/nighttemptime"
+        android:layout_width="68dp"
+        android:layout_height="27dp"
+        android:text="@string/_11_pm"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/eveningtemptime"
+        app:layout_constraintTop_toBottomOf="@+id/nighttemp"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

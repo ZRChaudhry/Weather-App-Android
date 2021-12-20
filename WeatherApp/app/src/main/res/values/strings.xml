@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="imperial">imperial</string>
+    <string name="forecast">forecast</string>
+    <string name="location">location</string>
+    <string name="chicago">Chicago</string>
+    <string name="_8_am">8am</string>
+    <string name="_1_pm">1pm</string>
+    <string name="_5_pm">5pm</string>
+    <string name="_11_pm">11pm</string>
+    <string name="weathericon" />
+    <string name="textview">textview</string>
+    <string name="todo" />
+
+
+</resources>
